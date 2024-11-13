@@ -1,0 +1,123 @@
+<div class="questionContent">
+    <div class="searchBlock__searchBar__inputText">
+        <label for="query" class="inputText__label">Nhập câu hỏi cần tìm:</label>
+        <input type="text" class="inputText__input" placeholder="VD: TCP/IP là gì" name="query" id="query">
+        <a class="inputText__button" href="/search">
+            <button class="search-button">
+                Tìm kiếm
+            </button>
+        </a>
+    </div>
+    <div class="__content__item">
+        <div class="__content__item--avatar">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="__content__item--tag">
+            <a href="/question" class="tag__link">
+                <h1 class="tag__link__heading">TCP/IP là gì và vai trò của nó trong mạng máy tính?</h1>
+            </a>
+            <div class="tag__desc">
+                <p class="tag__desc--text">Mô tả: Giao thức TCP/IP là nền tảng của Internet, cho phép các thiết
+                    bị kết nối và trao đổi dữ liệu với nhau. Câu hỏi này nhằm làm rõ khái niệm TCP/IP và lý do
+                    tại sao nó lại quan trọng trong việc kết nối mạng.</p>
+            </div>
+            <div class="tag__detail">
+                <div class="tag__user">
+                    <p class="tag__link__by">bởi</p>
+                    <p class="tag__link__username">Admin</p>
+                </div>
+                <div class="tag__time">
+                    <p>2 giờ trước</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="questionAnswer">
+        <div class="answer__header">Nội dung câu trả lời</div>
+        <p class="answer__text">TCP/IP (Transmission Control Protocol/Internet Protocol) là một bộ giao thức dùng để kết
+            nối các thiết bị trên Internet và các mạng máy tính. Được phát triển vào những năm 1970, TCP/IP đã trở thành
+            nền tảng tiêu chuẩn của mạng Internet, cho phép các thiết bị khác nhau truyền tải và nhận dữ liệu bất kể hệ
+            điều hành hoặc cấu trúc phần cứng.
+            Vai trò của TCP/IP trong mạng máy tính:
+
+            Kết nối các thiết bị khác nhau: TCP/IP cung cấp các quy tắc chung để các thiết bị, như máy tính, máy chủ, và
+            thiết bị mạng, có thể giao tiếp và trao đổi dữ liệu qua mạng.
+            Quản lý truyền tải dữ liệu: Với các giao thức như TCP, TCP/IP đảm bảo rằng dữ liệu được truyền tải chính xác
+            và đến đúng nơi. TCP chia nhỏ dữ liệu thành các gói tin, gửi chúng qua mạng và đảm bảo rằng chúng được lắp
+            ráp lại một cách chính xác ở đầu nhận.
+            Định tuyến dữ liệu: IP trong TCP/IP chịu trách nhiệm định tuyến các gói tin qua các mạng phức tạp, đảm bảo
+            chúng đến đích mong muốn dù qua nhiều mạng trung gian.
+            Tính linh hoạt và tương thích: TCP/IP có khả năng làm việc trên nhiều loại thiết bị và hệ thống, làm cho nó
+            trở thành một giao thức linh hoạt và có tính tương thích cao.
+        </p>
+    </div>
+</div>
+
+<style>
+    .searchBlock {
+        flex: 3.5;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .searchBlock__searchBar {
+        display: flex;
+        margin: 30px;
+        padding: 10px;
+        border: 2px solid #000;
+        border-radius: 10px;
+        background-color: #808080;
+    }
+
+    .searchBlock__searchBar__inputText {
+        flex: 3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+
+    }
+
+    .inputText__label {
+        flex: 1;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .inputText__input {
+        flex: 6;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .inputText__button {
+        flex: 1;
+        margin-left: 5px;
+    }
+
+    .search-button {
+        padding: 10px;
+        background-color: #7cfc00;
+        border-radius: 3px;
+    }
+
+    // Nội dung câu trả lời
+    .questionAnswer {
+        background-color: #fff;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+    }
+
+    .answer__header {
+        font-size: 20px;
+    }
+
+    .answer__text {
+        font-size: 16px;
+    }
+</style>

@@ -1,0 +1,154 @@
+/* Code container */
+.container {
+    padding: 0px;
+    width: 100%;
+}
+
+/*Code chao mung den voi website */
+.greeting {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: #ffdab9;
+    /* peach buff */
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 30px;
+    background-color: #ffe4e1;
+    /* misty rose */
+    margin: 100px 100px 60px 100px;
+}
+
+.greeting h2 {
+    color: #adff2f;
+    /* green yellow*/
+    font-size: 80px;
+    text-shadow:
+        2px 2px 0 var(--textColor--),
+        -2px 2px 0 var(--textColor--),
+        2px -2px 0 var(--textColor--),
+        -2px -2px 0 var(--textColor--);
+}
+
+.greeting p {
+    color: var(--textColor--);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Code Gioi thieu ve website */
+
+.intro {
+    text-align: center;
+    margin-left: 100px;
+    padding-right: 100px;
+}
+
+.intro h3 {
+    font-size: 20px;
+}
+
+/* Gioi thieu ve muc tieu va doi tuong huong toi */
+.containerTarget {
+    display: flex;
+    padding-top: 20px;
+}
+
+.itemTarget {
+    background-color: var(--mainColor--);
+    color: var(--textColor--);
+    margin: 0 100px 100px 100px;
+    padding: 40px;
+    border: 5px solid #000;
+    border-radius: 30px;
+}
+
+.itemTarget h1 {
+    color: var(--textColor--);
+    font-size: 32px;
+}
+
+.itemTarget p {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* Gioi thieu chuc nang trang web */
+.introFunction {
+    background-color: #ffc0cb;
+    /* pink */
+    color: var(--textColor--);
+    margin: 40px 50px 40px 50px;
+    padding: 40px;
+    border: 5px solid #ee82ee;
+    /* violet */
+    border-radius: 10px;
+
+}
+
+.titleFunction {
+    font-size: 30px;
+}
+
+.containerFunction {
+    display: flex
+}
+
+.itemFunction {
+    background-color: #ffe4e1;
+    margin: 0px 10px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.itemText {
+    font-size: 20px;
+}
+
+.itemFunction p {
+    font-size: 16px;
+}
+
+/* Code Gioi thieu loi ich trang web */
+.introAdvantage {
+    background-color: #ffc0cb;
+    color: var(--textColor--);
+    margin: 40px 50px;
+    padding: 40px;
+    border: 5px solid #ee82ee;
+    border-radius: 10px;
+}
+
+.titleAdvantage {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.containerAdvantage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemAdvantage {
+    background-color: #ffe4e1;
+    border-radius: 10px;
+    margin: 0px 10px;
+    padding: 10px 10px 0px 10px;
+}
+
+.itemAdvantage h1 {
+    font-size: 18px;
+}
+
+.itemAdvantage p {
+    font-size: 16px;
+}
+
+/* Code newest Answer */
+.newestAnswer {
+    text-align: center;
+}
+
+.newestAnswer ul {
+    list-style-type: none;
+}

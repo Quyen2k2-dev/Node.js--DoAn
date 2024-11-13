@@ -1,0 +1,75 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Cột</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .contentDashboard {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .greeting {
+            padding: 20px;
+            background-color: #ffe4e1;
+            margin-bottom: 30px;
+            border-radius: 15px;
+        }
+
+        .greeting h2 {
+            color: #006400;
+            font-size: 36px;
+        }
+
+        canvas {
+            max-width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contentDashboard" id="dashboard">
+        <div class="greeting">
+            <h2>Chào Mừng Bạn Đến Với Dashboard</h2>
+        </div>
+
+        <div>
+            <h3>Điểm Của Học Sinh</h3>
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'], // Các điểm số
+                datasets: [{
+                    label: 'Số Lượng Học Sinh',
+                    data: [20, 25, 30, 22, 28, 35, 40, 45, 50, 55], // Dữ liệu giả (số học sinh)
+                    backgroundColor: '#7cfc00', // Màu sắc cột
+                    borderColor: '#006400', // Màu viền
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Số Lượng Học Sinh'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

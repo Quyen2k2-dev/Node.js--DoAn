@@ -1,0 +1,167 @@
+<div class="container" id="profile">
+    <div class="account__content">
+        <div class="account__avatar">
+            <div class="account__avatar__image">
+                <img src="/src/public/img/red_panda.jpg" alt="">
+            </div>
+            <div class="account__avatar__underline">
+                <p class="account__avatar__text">Ảnh đại diện</p>
+                <p class="account__avatar__editIcon">
+                    <a href=""><i class="fa-regular fa-pen-to-square"></i></a>
+                </p>
+            </div>
+
+        </div>
+        <div class="account__cv">
+            <div class="account__cv__heading">
+                <h1>Hồ sơ người dùng</h1>
+                <a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
+            </div>
+            <div class="account__cv__group">
+                <p class="account__cv__label">Tên Người dùng</p>
+                <p class="account__cv__input">Nguyễn Văn Quyền</p>
+                <div class="account__cv__underline"></div>
+            </div>
+            <div class="account__cv__group">
+                <p class="account__cv__label">Độ tuổi</p>
+                <p class="account__cv__input">21</p>
+                <div class="account__cv__underline"></div>
+            </div>
+
+            <div class="account__cv__group">
+                <p class="account__cv__label">Chức vụ</p>
+                <p class="account__cv__input">Quản lý website</p>
+                <div class="account__cv__underline"></div>
+            </div>
+
+            <div class="account__cv__group">
+                <p class="account__cv__label">Email đăng ký</p>
+                <p class="account__cv__input">darkking2k2@gmail.com</p>
+                <div class="account__cv__underline"></div>
+            </div>
+
+            <div class="account__cv__group">
+                <p class="account__cv__label">Đăng ký vào ngày</p>
+                <p class="account__cv__input">15/08/2024</p>
+                <div class="account__cv__underline"></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<style>
+    .container {
+        width: 100%;
+    }
+
+    .account__content {
+        display: flex;
+        background-color: #808080;
+        padding: 20px;
+        margin: 40px auto;
+        border-radius: 20px;
+    }
+
+    .account__avatar {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .account__avatar__image img {
+        background-color: #fff;
+        background-image: url(/src/public/img/red_panda.jpg);
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+    }
+
+    .account__avatar__underline {
+        display: flex;
+        align-items: center;
+    }
+
+    .account__avatar__text {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 2rem;
+        color: #006400;
+    }
+
+    .account__avatar__editIcon {
+        margin-left: 10px;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 2rem;
+        color: #006400;
+    }
+
+    .account__avatar__editIcon a {
+        text-decoration: none;
+        color: #006400;
+    }
+
+    .account__avatar__editIcon a:hover {
+        background-color: #7cfc00;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .account__cv {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 10px;
+        justify-content: center;
+        padding-left: 20px;
+    }
+
+    .account__cv__heading {
+        font-size: 1.4rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+
+    .account__cv__heading h1 {
+        margin-right: 20px;
+    }
+
+    .account__cv__heading a i {
+        display: block;
+        padding: 10px;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .account__cv__heading a:hover {
+        background-color: #7cfc00;
+        border-radius: 10px;
+    }
+
+    .account__cv__group {
+        width: 100%;
+    }
+
+    .account__cv__label {
+        margin: 0px;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .account__cv__input {
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+
+    .account__cv__underline {
+        border: 1px solid#000;
+        margin-bottom: 5px;
+    }
+</style>

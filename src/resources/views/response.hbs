@@ -1,0 +1,59 @@
+<div class="feedback-response">
+    <h1 class="response-title">Phản hồi của bạn đã được gửi thành công!</h1>
+    <div class="response-details">
+        <p><strong>Tên học sinh:</strong> {{fullname}}</p>
+        <p><strong>Nội dung phản hồi:</strong> {{text}}</p>
+    </div>
+</div>
+<style>
+    .feedback-response {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        padding: 40px;
+        margin: 20px auto;
+        border-radius: 8px;
+        max-width: 800px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .response-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #2e8b57;
+        margin-bottom: 20px;
+    }
+
+    .response-details {
+        font-size: 1.2rem;
+        color: #333;
+        line-height: 1.6;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .response-details p {
+        margin: 10px 0;
+    }
+
+    strong {
+        color: #007bff; /* Màu xanh cho phần text strong */
+    }
+
+    .feedback-response p {
+        font-size: 1.1rem;
+        color: #555;
+    }
+
+    @media (max-width: 768px) {
+        .feedback-response {
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .response-title {
+            font-size: 1.8rem;
+        }
+    }
+
+</style>

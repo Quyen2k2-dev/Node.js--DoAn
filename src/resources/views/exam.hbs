@@ -1,0 +1,137 @@
+<div class="examContent">
+    <div class="exam__list">
+        <div class="exam__list__content">
+            <div class="exam__list__tittle">
+                <h1>Danh sách đề thi Mẫu</h1>
+            </div>
+            <div class="exam__list__container">
+                <div class="exam__list__item">
+                    <div class="item__number">
+                        <a href="/test">Đề 1</a>
+                    </div>
+
+                </div>
+                <div class="exam__list__item">
+                    <div class="item__number">
+                        <a href="/test">Đề 2</a>
+                    </div>
+
+                </div>
+                <div class="exam__list__item">
+                    <div class="item__number">
+                        <a href="/test">Đề 3</a>
+                    </div>
+
+                </div>
+                <div class="exam__list__item">
+                    <div class="item__number">
+                        <a href="/test">Đề 4</a>
+                    </div>
+
+                </div>
+                <div class="exam__list__item">
+                    <div class="item__number">
+                        <a href="/test">Đề 5</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="exam__CRUD">
+        <h1 class="CRUD__header">CHỈNH SỬA ĐỀ THI CỦA BẠN (GIÁO VIÊN)</h1>
+        <button class="insertTest">Thêm</button>
+        <button class="updateTest">Sửa</button>
+        <button class="deleteTest">Xóa</button>
+    </div>
+</div>
+<style>
+    .examContent {}
+
+    .exam__list {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .exam__list__content {
+        margin-left: 20px;
+    }
+
+    .exam__list__tittle {
+        padding: 10px 10px;
+        margin: 20px;
+        border: 2px solid #000;
+        border-radius: 5px;
+        background-color: #7cfc00;
+        min-width: 30%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exam__list__tittle h1 {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    .exam__list__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .exam__list__item {
+        display: flex;
+        padding: 10px 10px;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        margin: 5px auto;
+        background-color: #fffafa;
+    }
+
+
+
+    .item__number {
+        margin-right: 10px;
+        padding: 20px 20px;
+        border: 3px solid #000;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+    .item__number a {
+        text-decoration: none;
+        color: #006400;
+        font-size: 1rem;
+    }
+
+    .item__number__desc p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        line-height: 1.5;
+        max-height: 3em;
+    }
+
+    //CRUD ĐỀ THI
+    .exam__CRUD {
+        width: 100%;
+        margin-left: 40px;
+        !important
+    }
+
+    .CRUD__header {}
+
+    .insertTest {}
+
+    .deleteTest {}
+
+    .updateTest {}
+</style>
